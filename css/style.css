@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto+Slab:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 16px;
+}
+img{
+    max-width: 100%;
+}
+h1,h2,h3{
+    font-family:'Merriweather', sans-serif ;
+}
+p{
+    font-size: .9rem;
+    line-height: 20px;
+}
+a.btn,button{
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 15px 25px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+header{
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.12);
+    padding: 10px 0;
+}
+header a {
+    text-decoration: none;
+}
+header .columns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 80%;
+    margin: auto;
+}
+.logo h3{
+    margin-bottom: 0;
+}
+.logo span{
+    font-size: 14px;
+    margin: 0;
+   text-align: center;
+}
+header .columns nav{
+  text-align: right;
+
+}
+header .columns nav a{
+    margin-left: 10px;
+    transition: all .5s;
+}
+header .columns nav a.active{
+    border-bottom: 2px solid purple;
+}
+header .columns nav a:hover{
+   color: #555;
+}
+header .columns .nav-mobile label{
+    padding: 10px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+header .columns .nav-mobile{
+    display: none;
+
+}
+header .columns .nav-mobile input[type='checkbox']{
+    display: none;
+}
+header .columns .nav-mobile input[type='checkbox'] ~ nav{
+    display:none;
+}
+header .columns .nav-mobile input[type='checkbox']:checked ~ nav{
+    display: block;
+}
+
+
+@media (max-width:768px) {
+    header .columns nav a{
+        display: none;
+    }
+    header .columns .nav-mobile  {
+        display: block;
+    }
+    header .columns .nav-mobile input[type='checkbox'] ~ nav a{
+        display:none;
+    }
+    header .columns .nav-mobile input[type='checkbox']:checked ~ nav{
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.08), 3px 3px 10px rgba(0, 0, 0, 0.12);
+        width:100% ;
+        margin: 20px 0;
+    
+    }
+    header .columns .nav-mobile input[type='checkbox']:checked ~ nav a{
+        display: block;
+        padding: 20px 0;
+        text-align: center;
+    }
+    /* header .columns nav a.active{
+        border-bottom:none
+    } */
+   
+    
+}
+
+
+
+
+div.intro{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.intro-content{
+    padding-top: 3rem;
+}
+/* Home Page styles */
+.intro {
+  
+}
+
+.intro .content{
+    position: relative;
+    max-width: 60%;
+    margin: auto;
+    top:-600px;
+   
+}
+.mobile-pics{
+    display: none;
+}
+.intro .content h1{
+    text-align: center;
+    font-size: 5rem;
+
+}
+.intro .content p{
+padding: 10px 10px 20px;
+line-height: 20px;
+font-size: .9rem;
+  
+}
+.intro .content div{
+    text-align: center;
+}
+@media (max-width:768px) {
+   
+    .intro .content{
+        top:-500px;
+        max-width: 90%;
+        margin: auto;
+       
+    }
+    .intro .content h1{
+        font-size: 2rem;
+    }
+    .intro .content p{
+        font-size: .8rem;
+        color: #111;
+        padding: 20px 0;
+        line-height: 20px;
+  
+    }
+    .mobile-pics{
+        display: block;
+    }
+    .img-container{
+        display: none;
+    }
+}
+section.welcome{
+    margin-top: -170px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 50px;
+}
+.welcome .welcome-text{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.08), 3px 3px 10px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    height:300px;
+    padding: 30px 20px;
+    margin-left: 20px;
+
+}
+.welcome .welcome-text h1{
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+.welcome .welcome-text h1 span{
+    color: rgb(153, 5, 5);
+
+}
+.welcome .welcome-text p{
+    margin-bottom: 20px;
+    
+}
+.welcome .welcome-text div{
+    text-align: center;
+}
+@media (max-width:768px) {
+    .welcome .welcome-text{
+        max-width: 90%;
+        margin: auto;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
